@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-5.1.dtd">
+<!-- eric project file for project 辅助教学 -->
+<!-- Saved: 2019-09-28, 09:49:29 -->
+<!-- Copyright (C) 2019 ,  -->
+<Project version="5.1">
+  <Language>en_US</Language>
+  <Hash>c69af20959d558adcffd8f7ed94c9323f4359a2c</Hash>
+  <ProgLanguage mixed="0">Python3</ProgLanguage>
+  <ProjectType>PyQt5</ProjectType>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Eol index="0"/>
+  <Sources>
+    <Source>MulNoiseData.py</Source>
+    <Source>Ui_MulNoiseData.py</Source>
+    <Source>Ui_linaRegression.py</Source>
+    <Source>Ui_prml.py</Source>
+    <Source>Ui_probability.py</Source>
+    <Source>__init__.py</Source>
+    <Source>includes.py</Source>
+    <Source>linaRegression.py</Source>
+    <Source>main.py</Source>
+    <Source>pics_rc.py</Source>
+    <Source>prmlTest.py</Source>
+    <Source>prml/__init__.py</Source>
+    <Source>prml/bayesnet/__init__.py</Source>
+    <Source>prml/bayesnet/discrete.py</Source>
+    <Source>prml/bayesnet/probability_function.py</Source>
+    <Source>prml/bayesnet/random_variable.py</Source>
+    <Source>prml/clustering/__init__.py</Source>
+    <Source>prml/clustering/k_means.py</Source>
+    <Source>prml/dimreduction/__init__.py</Source>
+    <Source>prml/dimreduction/autoencoder.py</Source>
+    <Source>prml/dimreduction/bayesian_pca.py</Source>
+    <Source>prml/dimreduction/pca.py</Source>
+    <Source>prml/kernel/__init__.py</Source>
+    <Source>prml/kernel/gaussian_process_classifier.py</Source>
+    <Source>prml/kernel/gaussian_process_regressor.py</Source>
+    <Source>prml/kernel/kernel.py</Source>
+    <Source>prml/kernel/polynomial.py</Source>
+    <Source>prml/kernel/rbf.py</Source>
+    <Source>prml/kernel/relevance_vector_classifier.py</Source>
+    <Source>prml/kernel/relevance_vector_regressor.py</Source>
+    <Source>prml/kernel/support_vector_classifier.py</Source>
+    <Source>prml/linear/__init__.py</Source>
+    <Source>prml/linear/bayesian_logistic_regression.py</Source>
+    <Source>prml/linear/bayesian_regression.py</Source>
+    <Source>prml/linear/classifier.py</Source>
+    <Source>prml/linear/emprical_bayes_regression.py</Source>
+    <Source>prml/linear/fishers_linear_discriminant.py</Source>
+    <Source>prml/linear/least_squares_classifier.py</Source>
+    <Source>prml/linear/linear_regression.py</Source>
+    <Source>prml/linear/logistic_regression.py</Source>
+    <Source>prml/linear/perceptron.py</Source>
+    <Source>prml/linear/regression.py</Source>
+    <Source>prml/linear/ridge_regression.py</Source>
+    <Source>prml/linear/softmax_regression.py</Source>
+    <Source>prml/linear/variational_linear_regression.py</Source>
+    <Source>prml/linear/variational_logistic_regression.py</Source>
+    <Source>prml/markov/__init__.py</Source>
+    <Source>prml/markov/categorical_hmm.py</Source>
+    <Source>prml/markov/gaussian_hmm.py</Source>
+    <Source>prml/markov/hmm.py</Source>
+    <Source>prml/markov/kalman.py</Source>
+    <Source>prml/markov/particle.py</Source>
+    <Source>prml/markov/state_space_model.py</Source>
+    <Source>prml/nn/__init__.py</Source>
+    <Source>prml/nn/array/__init__.py</Source>
+    <Source>prml/nn/array/array.py</Source>
+    <Source>prml/nn/array/broadcast.py</Source>
+    <Source>prml/nn/array/ones.py</Source>
+    <Source>prml/nn/array/reshape.py</Source>
+    <Source>prml/nn/array/zeros.py</Source>
+    <Source>prml/nn/config.py</Source>
+    <Source>prml/nn/distribution/__init__.py</Source>
+    <Source>prml/nn/distribution/bernoulli.py</Source>
+    <Source>prml/nn/distribution/categorical.py</Source>
+    <Source>prml/nn/distribution/distribution.py</Source>
+    <Source>prml/nn/distribution/gaussian.py</Source>
+    <Source>prml/nn/function.py</Source>
+    <Source>prml/nn/image/__init__.py</Source>
+    <Source>prml/nn/image/convolve2d.py</Source>
+    <Source>prml/nn/image/deconvolve2d.py</Source>
+    <Source>prml/nn/image/max_pooling2d.py</Source>
+    <Source>prml/nn/image/util.py</Source>
+    <Source>prml/nn/io/__init__.py</Source>
+    <Source>prml/nn/io/io.py</Source>
+    <Source>prml/nn/loss/__init__.py</Source>
+    <Source>prml/nn/loss/kl.py</Source>
+    <Source>prml/nn/loss/sigmoid_cross_entropy.py</Source>
+    <Source>prml/nn/loss/softmax_cross_entropy.py</Source>
+    <Source>prml/nn/math/__init__.py</Source>
+    <Source>prml/nn/math/add.py</Source>
+    <Source>prml/nn/math/divide.py</Source>
+    <Source>prml/nn/math/exp.py</Source>
+    <Source>prml/nn/math/log.py</Source>
+    <Source>prml/nn/math/matmul.py</Source>
+    <Source>prml/nn/math/mean.py</Source>
+    <Source>prml/nn/math/multiply.py</Source>
+    <Source>prml/nn/math/negative.py</Source>
+    <Source>prml/nn/math/power.py</Source>
+    <Source>prml/nn/math/product.py</Source>
+    <Source>prml/nn/math/sqrt.py</Source>
+    <Source>prml/nn/math/square.py</Source>
+    <Source>prml/nn/math/subtract.py</Source>
+    <Source>prml/nn/math/sum.py</Source>
+    <Source>prml/nn/network.py</Source>
+    <Source>prml/nn/nonlinear/__init__.py</Source>
+    <Source>prml/nn/nonlinear/log_softmax.py</Source>
+    <Source>prml/nn/nonlinear/logit.py</Source>
+    <Source>prml/nn/nonlinear/relu.py</Source>
+    <Source>prml/nn/nonlinear/sigmoid.py</Source>
+    <Source>prml/nn/nonlinear/softmax.py</Source>
+    <Source>prml/nn/nonlinear/softplus.py</Source>
+    <Source>prml/nn/nonlinear/tanh.py</Source>
+    <Source>prml/nn/normalization/__init__.py</Source>
+    <Source>prml/nn/normalization/batch_normalization.py</Source>
+    <Source>prml/nn/optimizer/__init__.py</Source>
+    <Source>prml/nn/optimizer/ada_delta.py</Source>
+    <Source>prml/nn/optimizer/ada_grad.py</Source>
+    <Source>prml/nn/optimizer/adam.py</Source>
+    <Source>prml/nn/optimizer/gradient.py</Source>
+    <Source>prml/nn/optimizer/momentum.py</Source>
+    <Source>prml/nn/optimizer/optimizer.py</Source>
+    <Source>prml/nn/optimizer/rmsprop.py</Source>
+    <Source>prml/nn/queue.py</Source>
+    <Source>prml/nn/random/__init__.py</Source>
+    <Source>prml/nn/random/dropout.py</Source>
+    <Source>prml/nn/random/normal.py</Source>
+    <Source>prml/nn/random/random.py</Source>
+    <Source>prml/nn/random/uniform.py</Source>
+    <Source>prml/preprocess/__init__.py</Source>
+    <Source>prml/preprocess/gaussian.py</Source>
+    <Source>prml/preprocess/label_transformer.py</Source>
+    <Source>prml/preprocess/polynomial.py</Source>
+    <Source>prml/preprocess/sigmoidal.py</Source>
+    <Source>prml/rv/__init__.py</Source>
+    <Source>prml/rv/bernoulli.py</Source>
+    <Source>prml/rv/bernoulli_mixture.py</Source>
+    <Source>prml/rv/beta.py</Source>
+    <Source>prml/rv/categorical.py</Source>
+    <Source>prml/rv/dirichlet.py</Source>
+    <Source>prml/rv/gamma.py</Source>
+    <Source>prml/rv/gaussian.py</Source>
+    <Source>prml/rv/multivariate_gaussian.py</Source>
+    <Source>prml/rv/multivariate_gaussian_mixture.py</Source>
+    <Source>prml/rv/rv.py</Source>
+    <Source>prml/rv/students_t.py</Source>
+    <Source>prml/rv/uniform.py</Source>
+    <Source>prml/rv/variational_gaussian_mixture.py</Source>
+    <Source>prml/sampling/__init__.py</Source>
+    <Source>prml/sampling/metropolis.py</Source>
+    <Source>prml/sampling/metropolis_hastings.py</Source>
+    <Source>prml/sampling/rejection_sampling.py</Source>
+    <Source>prml/sampling/sir.py</Source>
+    <Source>probability.py</Source>
+    <Source>setup.py</Source>
+  </Sources>
+  <Forms>
+    <Form>MulNoiseData.ui</Form>
+    <Form>linaRegression.ui</Form>
+    <Form>prml.ui</Form>
+    <Form>probability.ui</Form>
+  </Forms>
+  <Translations/>
+  <Resources>
+    <Resource>pics.qrc</Resource>
+  </Resources>
+  <Interfaces/>
+  <Others/>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.e4p" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
+    <FiletypeAssociation pattern="*.md" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.py" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.py3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES"/>
+    <FiletypeAssociation pattern="*.rst" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.txt" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ui" type="FORMS"/>
+    <FiletypeAssociation pattern="README" type="OTHERS"/>
+    <FiletypeAssociation pattern="README.*" type="OTHERS"/>
+  </FiletypeAssociations>
+</Project>

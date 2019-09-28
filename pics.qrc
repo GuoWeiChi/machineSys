@@ -1,0 +1,12 @@
+<RCC>
+  <qresource>
+    <file>images/3.png</file>
+    <file>images/2.png</file>
+    <file>images/1.png</file>
+    <file>images/cartoon1.ico</file>
+    <file>images/cartoon2.ico</file>
+    <file>images/cartoon3.ico</file>
+    <file>images/cartoon4.ico</file>
+    <file>images/python.jpg</file>
+  </qresource>
+</RCC>
