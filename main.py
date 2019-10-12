@@ -1,9 +1,11 @@
 from PyQt5.QtWidgets import QMainWindow,QApplication
 from PyQt5.QtGui import QIcon
-from prmlTest import MainWindow
+from mainWindow import MainWindow
 
 from scipy import _distributor_init
 # from scipy import spatial.ck
+
+
 
 if __name__ == "__main__":
     import sys

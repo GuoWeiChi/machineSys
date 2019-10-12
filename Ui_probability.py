@@ -33,6 +33,9 @@ class Ui_Dialog(object):
         self.pushButtonEM = QtWidgets.QPushButton(Dialog)
         self.pushButtonEM.setGeometry(QtCore.QRect(120, 100, 75, 23))
         self.pushButtonEM.setObjectName("pushButtonEM")
+        self.pushButtonVar = QtWidgets.QPushButton(Dialog)
+        self.pushButtonVar.setGeometry(QtCore.QRect(220, 100, 75, 23))
+        self.pushButtonVar.setObjectName("pushButtonVar")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -46,6 +49,7 @@ class Ui_Dialog(object):
         self.pushButtonAvg.setText(_translate("Dialog", "均匀分布"))
         self.pushButtonGauss.setText(_translate("Dialog", "均匀分布求均值"))
         self.pushButtonEM.setText(_translate("Dialog", "EM模型"))
+        self.pushButtonVar.setText(_translate("Dialog", "均值|方差"))
 
 
 if __name__ == "__main__":

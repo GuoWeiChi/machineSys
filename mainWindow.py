@@ -4,16 +4,18 @@
 Module implementing MainWindow.
 """
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtCore import Qt,QSize
+from PyQt5.QtCore import Qt, QSize
 from PyQt5.QtWidgets import QMainWindow
-from PyQt5.QtGui import QPalette,QColor
+from PyQt5.QtGui import QPalette, QColor
 
 from Ui_prml import Ui_MainWindow
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-import time
+
+
+from probability import probabilityDialog
 
 from MulNoiseData import MulNoiseDataDlg
 
@@ -26,21 +28,30 @@ from prml.linear import (
 
 import linaRegression
 
+import probability
+
+import DiagLogisticReression
+
+from sklearn import linear_model
+
+import pandas as pd
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     """
     Class documentation goes here.
     """
 
-
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
         self.myDlg = MulNoiseDataDlg()
         self.myDlg1 = linaRegression.Dialog()
         self.setupUi(self)
-        #self.setWindowOpacity(0.9)  # 设置窗口透明度
+        # self.setWindowOpacity(0.9)  # 设置窗口透明度
         # Ui_MainWindow3.setAttribute(QtCore.Qt.WA_TranslucentBackground) # 设置窗口背景透明
-        #self.setWindowFlag(Qt.FramelessWindowHint)  # 隐藏边框
+        # self.setWindowFlag(Qt.FramelessWindowHint)  # 隐藏边框
         pe = QPalette()
         self.setAutoFillBackground(True)
 
@@ -65,9 +76,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.tabWidget.setStyleSheet('''background:#C0C0C0''')
 
-
-
-# 创建随机数据
+    # 创建随机数据
     def create_toy_data(self, func, sample_size, std):
         # 生成数据在0-1之间,sample_size个数据,包括1
         x = np.linspace(0, 1, sample_size)
@@ -118,3 +127,49 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         plt.annotate("M=9", xy=(0.8, 0.5))
         plt.legend(bbox_to_anchor=(0.7, 1.), loc=2, borderaxespad=0.)
         plt.show()
+
+    @pyqtSlot()
+    def on_pushButton_probability_clicked(self):
+        pd = probability.probabilityDialog()
+        pd.show()
+        pd.exec_()
+        pass
+
+    @pyqtSlot()
+    def on_pushButtonLogitic_clicked(self):
+        pd = DiagLogisticReression.Dialog()
+        pd.show()
+        pd.exec_()
+
+    @pyqtSlot()
+    def on_pushButton_spam_clicked(self):
+        df = pd.read_csv('SMSSpamCollection.txt',delimiter='\t',header=None)
+        y,X_train = df[0],df[1]
+
+        vectorizer = TfidfVectorizer()
+        X = vectorizer.fit_transform(X_train)
+
+        lr = linear_model.LogisticRegression()
+        lr.fit(X,y)
+
+        testX = vectorizer.transform(['URGENT! Your mobile No. 1234 was awarded a Prize'])
+
+        predictions = lr.predict(testX)
+        print(predictions)
+
+
+from PyQt5.QtWidgets import QMainWindow,QApplication
+from PyQt5.QtGui import QIcon
+from mainWindow import MainWindow
+
+from scipy import _distributor_init
+# from scipy import spatial.ck
+
+if __name__ == "__main__":
+    import sys
+    app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon("./images/cartoon1.ico"))
+    myWin = MainWindow()
+    myWin.show()
+    sys.exit(app.exec_())
+    input("输入任意键结束")

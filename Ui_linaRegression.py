@@ -8,7 +8,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from PyQt5.QtWidgets import QHeaderView
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):

@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(919, 734)
+        MainWindow.resize(1626, 975)
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.tabWidget = QtWidgets.QTabWidget(self.centralWidget)
@@ -102,10 +102,19 @@ class Ui_MainWindow(object):
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.tabWidget.addTab(self.tab_2, icon1, "")
+        self.tab_5 = QtWidgets.QWidget()
+        self.tab_5.setObjectName("tab_5")
+        self.pushButtonLogitic = QtWidgets.QPushButton(self.tab_5)
+        self.pushButtonLogitic.setGeometry(QtCore.QRect(20, 20, 112, 34))
+        self.pushButtonLogitic.setObjectName("pushButtonLogitic")
+        self.pushButton_spam = QtWidgets.QPushButton(self.tab_5)
+        self.pushButton_spam.setGeometry(QtCore.QRect(160, 20, 121, 34))
+        self.pushButton_spam.setObjectName("pushButton_spam")
+        self.tabWidget.addTab(self.tab_5, "")
         MainWindow.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -117,6 +126,9 @@ class Ui_MainWindow(object):
         self.pushButton_probability.setText(_translate("MainWindow", "概率统计"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "多项式拟合"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "贝叶斯"))
+        self.pushButtonLogitic.setText(_translate("MainWindow", "逻辑回归"))
+        self.pushButton_spam.setText(_translate("MainWindow", "垃圾短信判定"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "计算机图形学"))
 import pics_rc
 
 

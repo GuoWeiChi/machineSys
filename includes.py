@@ -35,9 +35,11 @@ import time
 
 from PyQt5.QtWidgets import QMainWindow,QApplication
 from PyQt5.QtGui import QIcon
-from prmlTest import MainWindow
 
 from scipy import _distributor_init
 
 import math
+
+
+import pandas as pd
 # from scipy import spatial.ck
